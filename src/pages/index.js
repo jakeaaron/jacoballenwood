@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -10,12 +11,25 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div className="content">
+          <img src="https://www.otssolutions.com/blog/wp-content/uploads/Mobile-App-Development-e1473317596452.jpg" />
+          <div
+            data-aos="fade-up"
+            data-aos-offest="-1000"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+            className="content"
+          >
             <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
           </div>
           {posts
             .map(({ node: post }) => (
               <div
+                data-aos="fade-up"
+                data-aos-offest="-1000"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
                 className="content"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
