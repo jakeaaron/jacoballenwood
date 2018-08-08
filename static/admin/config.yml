@@ -6,6 +6,10 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "home"
+    label: "Home"
+    folder: "src/pages/home"
+    
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
